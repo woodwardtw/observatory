@@ -1,1 +1,18 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#main-nav {
+    position: fixed;
+    bottom: 20px;
+    width: 70vw;
+    margin: 0 15vw;
+    display: block;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+p {
+    font-size: 1.5rem;
+}
