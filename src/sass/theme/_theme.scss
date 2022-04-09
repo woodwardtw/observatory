@@ -9,9 +9,14 @@ body {
     width: 70vw;
     margin: 0 15vw;
     display: block;
-    border-radius: 50px;
+    border-radius: 150px;
     padding: 10px 20px;
     box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+}
+
+#main-menu li a{
+    font-size: 2.2rem;
+    color: #fff;
 }
 
 p {
