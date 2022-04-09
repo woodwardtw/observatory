@@ -17,13 +17,15 @@ if ( is_front_page() ) {
 	get_template_part( 'global-templates/hero' );
 }
 ?>
+<div class="logo-holder" id="logo-holder">
+	<?php echo get_the_post_thumbnail( $post->ID, 'large', array('class' => 'center-logo') ); ?>
+</div>
 
 <div class="wrapper" id="full-width-page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
-		<div class="row">
-
+		<div class="row">			
 			<div class="col-md-12 content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
