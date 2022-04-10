@@ -68,8 +68,17 @@ p {
 .entry-title {
     text-align: center;
     font-size: 5rem;
+    margin-bottom: 80px;
 }
 
 .entry-content {
     padding-bottom: 200px;
+}
+
+
+/* Medium screen devices (768px and above) */
+@media only screen and (max-width: 768px) {
+    #logo-holder .center-logo {
+        max-width: 100%;
+    }
 }
