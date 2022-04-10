@@ -18,7 +18,7 @@ if ( is_front_page() ) {
 }
 ?>
 <div class="logo-holder" id="logo-holder">
-	<?php echo get_the_post_thumbnail( $post->ID, 'large', array('class' => 'center-logo') ); ?>
+	<?php echo get_the_post_thumbnail( $post->ID, 'large', array('class' => 'center-logo') );?>
 </div>
 
 <div class="wrapper" id="full-width-page-wrapper">

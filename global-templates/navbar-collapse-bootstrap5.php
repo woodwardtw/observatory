@@ -24,7 +24,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<img src="<?php echo get_template_directory_uri();?>/imgs/logo-minimal.svg" alt="Return to the <?php echo bloginfo( 'name' );?> home page." class="minimal-logo">
 		</a>
 
-		?>
 		<!-- end custom logo -->
 
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
