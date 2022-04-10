@@ -140,3 +140,80 @@ function create_external_cpt() {
   $wp_rewrite->flush_rules();
 }
 add_action( 'init', 'create_external_cpt', 0 );
+
+
+
+add_action( 'init', 'create_tool_taxonomies', 0 );
+function create_tool_taxonomies()
+{
+  // Add new taxonomy, NOT hierarchical (like tags)
+  $labels = array(
+    'name' => _x( 'Tools', 'taxonomy general name' ),
+    'singular_name' => _x( 'tool', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Tools' ),
+    'popular_items' => __( 'Popular Tools' ),
+    'all_items' => __( 'All Tools' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Edit Tools' ),
+    'update_item' => __( 'Update tool' ),
+    'add_new_item' => __( 'Add New tool' ),
+    'new_item_name' => __( 'New tool' ),
+    'add_or_remove_items' => __( 'Add or remove Tools' ),
+    'choose_from_most_used' => __( 'Choose from the most used Tools' ),
+    'menu_name' => __( 'tool' ),
+  );
+
+//registers taxonomy specific post types - default is just post
+  register_taxonomy('tools',array('post','external','story'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'tool' ),
+    'show_in_rest'          => true,
+    'rest_base'             => 'tool',
+    'rest_controller_class' => 'WP_REST_Terms_Controller',
+    'show_in_nav_menus' => true,    
+  ));
+}
+
+
+add_action( 'init', 'create_theme_taxonomies', 0 );
+function create_theme_taxonomies()
+{
+  // Add new taxonomy, NOT hierarchical (like tags)
+  $labels = array(
+    'name' => _x( 'Themes', 'taxonomy general name' ),
+    'singular_name' => _x( 'theme', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Themes' ),
+    'popular_items' => __( 'Popular Themes' ),
+    'all_items' => __( 'All Themes' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Edit Themes' ),
+    'update_item' => __( 'Update theme' ),
+    'add_new_item' => __( 'Add New theme' ),
+    'new_item_name' => __( 'New theme' ),
+    'add_or_remove_items' => __( 'Add or remove Themes' ),
+    'choose_from_most_used' => __( 'Choose from the most used Themes' ),
+    'menu_name' => __( 'theme' ),
+  );
+
+//registers taxonomy specific post types - default is just post
+  register_taxonomy('Themes',array('post','external','story'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'theme' ),
+    'show_in_rest'          => true,
+    'rest_base'             => 'theme',
+    'rest_controller_class' => 'WP_REST_Terms_Controller',
+    'show_in_nav_menus' => true,    
+  ));
+}
+
+
