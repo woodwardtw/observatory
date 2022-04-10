@@ -17101,6 +17101,7 @@ body {
   padding: 0 15px 0 0;
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
   border: 1px solid #fff;
+  z-index: 100;
 }
 
 #main-menu li a {
@@ -17162,6 +17163,11 @@ p {
 
 .entry-content {
   padding-bottom: 200px;
+}
+
+#acf-form {
+  max-width: 600px;
+  margin: 50px auto;
 }
 
 /* Medium screen devices (768px and above) */
