@@ -217,6 +217,42 @@ function create_theme_taxonomies()
 }
 
 
+add_action( 'init', 'create_position_taxonomies', 0 );
+function create_position_taxonomies()
+{
+  // Add new taxonomy, NOT hierarchical (like tags)
+  $labels = array(
+    'name' => _x( 'Positions', 'taxonomy general name' ),
+    'singular_name' => _x( 'position', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Positions' ),
+    'popular_items' => __( 'Popular Positions' ),
+    'all_items' => __( 'All Positions' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Edit Positions' ),
+    'update_item' => __( 'Update position' ),
+    'add_new_item' => __( 'Add New position' ),
+    'new_item_name' => __( 'New position' ),
+    'add_or_remove_items' => __( 'Add or remove Positions' ),
+    'choose_from_most_used' => __( 'Choose from the most used Positions' ),
+    'menu_name' => __( 'position' ),
+  );
+
+//registers taxonomy specific post types - default is just post
+  register_taxonomy('positions',array('story'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'position' ),
+    'show_in_rest'          => true,
+    'rest_base'             => 'position',
+    'rest_controller_class' => 'WP_REST_Terms_Controller',
+    'show_in_nav_menus' => true,    
+  ));
+}
+
 //save acf json
 				add_filter('acf/settings/save_json', 'he_obv_json_save_point');
 				 
