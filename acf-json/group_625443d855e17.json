@@ -18,8 +18,8 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "table",
-            "button_label": "",
+            "layout": "block",
+            "button_label": "Add element",
             "sub_fields": [
                 {
                     "key": "field_625443ffc8524",
@@ -42,8 +42,8 @@
                 },
                 {
                     "key": "field_62544406c8525",
-                    "label": "",
-                    "name": "",
+                    "label": "Description",
+                    "name": "description",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -123,5 +123,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649689686
+    "modified": 1649698639
 }
