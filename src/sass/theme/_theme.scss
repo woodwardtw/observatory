@@ -97,6 +97,10 @@ p.gfield_post_tags_hint {
     font-size: .9rem;
 }
 
+.entry-content .gform_wrapper.gravity-theme .gfield-choice-input+label {
+    font-size: 1.5rem;
+}
+
 /* Medium screen devices (768px and above) */
 @media only screen and (max-width: 768px) {
     #logo-holder .center-logo {
