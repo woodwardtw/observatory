@@ -17204,6 +17204,13 @@ p.gfield_post_tags_hint {
   #logo-holder .center-logo {
     max-width: 100%;
   }
+
+  #main-nav {
+    width: 90vw;
+    margin: 0 5vw;
+    display: block;
+    border-radius: 50px;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */
