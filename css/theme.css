@@ -17209,7 +17209,18 @@ p.gfield_post_tags_hint {
     width: 90vw;
     margin: 0 5vw;
     display: block;
-    border-radius: 50px;
+    border-radius: 150px;
+    transition: 0.3s ease;
+  }
+
+  #main-nav.sharp {
+    border-radius: 60px 0 0 0;
+    width: 100vw;
+    margin: 0 0;
+  }
+
+  .navbar-nav {
+    padding-left: 15px;
   }
 }
 
