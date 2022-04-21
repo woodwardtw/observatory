@@ -17199,6 +17199,34 @@ p.gfield_post_tags_hint {
   border-radius: 50px;
 }
 
+.facet-holder {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.facet-block {
+  width: 40vw;
+  border: 1px solid #efefef;
+  padding: 20px 30px;
+}
+
+.facet-excerpt p {
+  font-size: 1.4rem;
+}
+
+.understrap-read-more-link {
+  display: none;
+}
+
+.btn-primary {
+  border-radius: 50px;
+}
+
 /* Medium screen devices (768px and above) */
 @media only screen and (max-width: 768px) {
   #logo-holder .center-logo {
