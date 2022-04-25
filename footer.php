@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Story Modal</h5>
+        <h2 class="modal-title" id="staticBackdropLabel">Your Story</h2>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -36,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Story Modal</h5>
+        <h2 class="modal-title" id="staticBackdropLabel">Coverage</h2>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
