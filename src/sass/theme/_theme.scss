@@ -138,6 +138,16 @@ p.gfield_post_tags_hint {
 	font-size: 1.4rem;
 }
 
+.facetwp-facet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.facetwp-checkbox {
+    width: 100px;
+}
+
 .understrap-read-more-link {
 	display: none;
 }

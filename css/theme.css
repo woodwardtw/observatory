@@ -17236,6 +17236,22 @@ p.gfield_post_tags_hint {
   font-size: 1.4rem;
 }
 
+.facetwp-facet {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.facetwp-checkbox {
+  width: 100px;
+}
+
 .understrap-read-more-link {
   display: none;
 }
