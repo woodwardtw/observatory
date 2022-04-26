@@ -141,11 +141,13 @@ p.gfield_post_tags_hint {
 .facetwp-facet {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .facetwp-checkbox {
-    width: 100px;
+    width: 120px;
+    border-right: 1px solid #efefef;
+    padding: 10px 15px;
 }
 
 .understrap-read-more-link {
