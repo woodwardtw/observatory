@@ -149,6 +149,11 @@ p.gfield_post_tags_hint {
     width: 150px;
     border-right: 1px solid #efefef;
     padding: 10px 15px;
+    transition: all .3s ease;
+}
+
+.facetwp-checkbox:hover {
+    background-color: $yellow;
 }
 
 .understrap-read-more-link {
