@@ -109,6 +109,14 @@ p.gfield_post_tags_hint {
     width: 300px;
     text-align: center;
     border-radius: 50px;
+    text-decoration: none;
+    transition: all .3s ease;
+    border: none;
+}
+
+.read-original:hover {
+    background-color: $yellow;
+    color: #000;
 }
 
 .facet-holder {
@@ -133,6 +141,18 @@ p.gfield_post_tags_hint {
 
 .btn-primary {
 	border-radius: 50px;
+}
+
+.sub-box {
+	border: 1px solid #efefef;
+	border-radius: 5px;
+	padding: 35px 45px;
+	position: relative;
+	height: 100%;
+}
+
+.sub-box p {
+	font-size: 1.5rem;
 }
 
 
