@@ -17203,8 +17203,7 @@ p.gfield_post_tags_hint {
 }
 
 .read-original:hover {
-  background-color: #FAD02C;
-  color: #000;
+  padding-left: 10px;
 }
 
 .facet-holder {
