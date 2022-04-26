@@ -23,7 +23,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <?php gravity_form( 1, false, false);?>
+        <?php gravity_form( 1,  false, false, false, '', true);?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -40,7 +40,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <?php gravity_form( 2, false, false);?>
+        <?php gravity_form( 2, false, false, false, '', true);?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
