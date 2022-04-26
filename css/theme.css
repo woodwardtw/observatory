@@ -17246,10 +17246,11 @@ p.gfield_post_tags_hint {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .facetwp-checkbox {
-  width: 120px;
+  width: 150px;
   border-right: 1px solid #efefef;
   padding: 10px 15px;
 }
