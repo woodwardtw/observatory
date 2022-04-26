@@ -17256,6 +17256,10 @@ p.gfield_post_tags_hint {
   transition: all 0.3s ease;
 }
 
+.facetwp-checkbox.checked {
+  background-color: #FAD02C;
+}
+
 .facetwp-checkbox:hover {
   background-color: #FAD02C;
 }

@@ -152,6 +152,10 @@ p.gfield_post_tags_hint {
     transition: all .3s ease;
 }
 
+.facetwp-checkbox.checked {
+    background-color: $yellow;
+}
+
 .facetwp-checkbox:hover {
     background-color: $yellow;
 }
