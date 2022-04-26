@@ -114,8 +114,9 @@ p.gfield_post_tags_hint {
     border: none;
 }
 
-.read-original:hover {
-    padding-left: 10px;
+.read-original::before:after {
+    content: '';
+    position: relative;
 }
 
 .facet-holder {
@@ -128,6 +129,9 @@ p.gfield_post_tags_hint {
 	width: 40vw;
 	border: 1px solid #efefef;
 	padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .facet-excerpt p{
